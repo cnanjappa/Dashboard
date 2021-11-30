@@ -20,6 +20,7 @@ export class Project extends React.Component<ProjectProps,ProjectState>{
         };
     }
     public getItems(filterVal){
+        Log.info("FilterValue - ", filterVal);
        if (filterVal==="All") {
             this.props.context.spHttpClient
             .get(
